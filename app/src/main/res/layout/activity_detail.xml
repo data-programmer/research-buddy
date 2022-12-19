@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.search.SearchFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:context=".ui.activities.DetailActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="start"
+            android:text="An Analysis of Ruby on Rails"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/calendar_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_calendar_black_24"
+                android:contentDescription="Calendar image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginLeft="8dp"
+                android:text="2011"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/calendar_image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.615" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/author_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_people_black_24"
+                android:contentDescription="Author image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:text="Hochstadt, Jake"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/author_image"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <ImageView
+                android:id="@+id/paper_image"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_paper_black_24"
+                android:contentDescription="Paper image"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:text="Abstract"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/paper_image"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/abstract_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan faucibus ante, et fermentum tortor mattis quis. Integer laoreet luctus euismod. Quisque ac neque tortor. In at lacus massa. Vestibulum cursus interdum sapien ut pellentesque. Nullam consectetur mi non metus vestibulum pellentesque. Sed ac suscipit est. Ut maximus efficitur tellus, ut porttitor tortor semper ac. Donec malesuada fringilla malesuada. Ut eget lacus eu tortor eleifend scelerisque eu consequat massa. Donec imperdiet ex quis lectus luctus, ac porttitor enim porta. Donec pulvinar molestie bibendum. In mollis finibus euismod. Vestibulum sit amet nunc efficitur, sagittis nulla ut, congue dui. Nullam volutpat elit vel tortor maximus, at porta urna elementum. Morbi consequat egestas arcu sed sodales. Praesent interdum justo non blandit cursus. Sed finibus ex est, vel placerat nibh pulvinar ut. Sed lobortis posuere est ac ullamcorper. Pellentesque nec sagittis velit. Vestibulum pretium ornare nulla, ut scelerisque ante egestas ac. Curabitur non justo tincidunt, lobortis nisi eu, interdum augue. Fusce porta, mauris quis gravida molestie, augue libero viverra eros, a volutpat elit nisl quis ante. Etiam vel lorem velit. Duis nec nibh erat. Etiam augue mi, ultricies eu varius id, aliquam pretium est. Quisque condimentum, eros sit amet gravida ullamcorper, diam metus aliquam nibh, iaculis lacinia massa nisl eget sapien. Nullam ac ullamcorper nibh. Vivamus et neque dapibus, aliquam lectus id, vulputate metus. Proin pharetra blandit purus, quis dictum leo condimentum sit amet. Maecenas blandit, velit eget tristique vulputate, massa mi vestibulum nisl, sed bibendum felis lacus at purus. "
+            android:textAlignment="viewStart"
+            android:gravity="start"
+            android:textSize="14sp"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

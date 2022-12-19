@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.search.SearchFragment">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+               android:layout_marginVertical="15dp"
+                android:layout_marginHorizontal="10dp">
+
+                <TextView
+                    android:id="@+id/provider_search_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Select Provider"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <Spinner
+                    android:id="@+id/search_provider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:entries="@array/provider_list"
+                    android:labelFor="@+id/provider_search_label" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/language_search_label"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginVertical="5dp"-->
+<!--                    android:layout_marginHorizontal="10dp"-->
+<!--                    android:text="Select Language"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="@android:color/black" />-->
+
+<!--                <Spinner-->
+<!--                    android:id="@+id/search_language"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginVertical="5dp"-->
+<!--                    android:layout_marginHorizontal="15dp"-->
+<!--                    android:entries="@array/language_list"-->
+<!--                    android:labelFor="@+id/language_search_label" />-->
+
+                <TextView
+                    android:id="@+id/search_by_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Search By"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <Spinner
+                    android:id="@+id/search_by"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:entries="@array/search_by_list"
+                    android:labelFor="@+id/search_by_spinner" />
+
+                <TextView
+                    android:id="@+id/text_search_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Search Text"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/search_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:inputType="text"
+                    android:labelFor="@+id/text_search_label"
+                    android:hint="Enter search text"
+                    android:autofillHints="Search text" />
+
+<!--                <TextView-->
+<!--                    android:id="@+id/year_label"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:layout_marginHorizontal="10dp"-->
+<!--                    android:text="Choose Year Range"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="@android:color/black" />-->
+
+<!--                <SeekBar-->
+<!--                    android:id="@+id/search_year"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginVertical="5dp"-->
+<!--                    android:layout_marginHorizontal="15dp" />-->
+
+                <Button
+                    android:id="@+id/search_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="Search" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</androidx.core.widget.NestedScrollView>
